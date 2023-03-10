@@ -1,4 +1,4 @@
-// In this module, define and export a harvestPlants function.
+
 // The harvestPlants function must accept the plants array as input.
 // The function will return an array of seed objects.
 //const plan =["Corn", "Potato"]
@@ -23,7 +23,20 @@
 //     }
 // ]
 // Again, the exception is corn. Half of your corn will be sold to cattle ranchers, so only half of the output of each corn plant will be added to the array that this function returns.
+
+
 // Checking Your Logic
 // In the main.js module, get the array of plants from the field module, and then harvest them by invoking the appropriate function that you defined above. Make sure you specify the array of plants as an argument to the harvesting function.
 
 // Then use console.log() to see your new array of harvested food to sell.
+
+
+// In this module, define and export a harvestPlants function.
+export const harvestPlants = () => {
+harvestPlants.push(p => p.type === "Corn").length
+// harvestedPlants.filter(p => p.type === "Potato").length
+// harvestedPlants.filter(p => p.type === "Soybean").length
+// harvestedPlants.filter(p => p.type === "Sunflower").length
+// harvestedPlants.filter(p => p.type === "Wheat").length
+
+}
