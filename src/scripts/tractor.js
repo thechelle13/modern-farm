@@ -16,9 +16,30 @@ import { createWheat } from "./seeds/wheat.js"
 
 // In this module, define and export a plantSeeds function.
 // The function must accept the year's planting plan as input (i.e. it must define a parameter).
-export const plantSeeds = (crop) => {
+export const plantSeeds = (yearlyPlan) => {
+    for (const  ){
+        createAsparagus()
+    } if
+    {
+        createCorn()
+    }else if
+    {
+        createPotato()
+    }
+    {
+        createSoybean()
+    }
+    {
+        createSunflower()
+    }
+    {
+        createWheat()
+    }
 
-
+    
+    
+    
+    
 }
 
 // The plan is an array.It contains 3 arrays representing the rows in the field to be plants. Figure out how to iterate both the parent array and the child arrays.
@@ -30,9 +51,3 @@ export const plantSeeds = (crop) => {
 // ]
 const plan = []
 
-createAsparagus()
-createCorn()
-createPotato()
-createSoybean()
-createSunflower()
-createWheat()

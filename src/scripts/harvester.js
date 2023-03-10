@@ -32,11 +32,13 @@
 
 
 // In this module, define and export a harvestPlants function.
-export const harvestPlants = () => {
-harvestPlants.push(p => p.type === "Corn").length
-// harvestedPlants.filter(p => p.type === "Potato").length
-// harvestedPlants.filter(p => p.type === "Soybean").length
-// harvestedPlants.filter(p => p.type === "Sunflower").length
-// harvestedPlants.filter(p => p.type === "Wheat").length
+export const harvestPlants = (plants) => {
+    for (const plant of plants) {
+        //const  =[]
+    }
+//.push()
 
+return 
 }
+
+harvestPlants()

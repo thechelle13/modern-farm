@@ -3,14 +3,15 @@
 // type wheat
 // height 230
 // output 6
-const wheat = {
-    type: "Wheat",
-    height: 230, 
-    output: 6
-    }
+
 
 
 export const createWheat = () => {
+    const wheat = {
+        type: "Wheat",
+        height: 230, 
+        output: 6
+        }
     
     return wheat
 }
