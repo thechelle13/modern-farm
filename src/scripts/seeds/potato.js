@@ -4,14 +4,14 @@
 // height 32
 // output 2
 
-
 export const createPotato = () => {
     const potato = {
         type: "Potato",
         height: 32,
         output: 2
     }
-
+    
     return potato
 }
-createPotato()
+
+console.log(createPotato())

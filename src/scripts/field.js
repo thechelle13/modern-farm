@@ -1,47 +1,33 @@
-
-
-
-// import { createAsparagus } from "./seeds/asparagus"
-// import { createCorn } from "./seeds/corn"
-// import { createPotato } from "./seeds/potato"
-// import { createSoybean } from "./seeds/soybean"
-// import { createSunflower } from "./seeds/sunflower"
-// import { createWheat } from "./seeds/wheat"
-// createAsparagus()
-// createCorn()
-// createPotato()
-// createSoybean()
-// createSunflower()
-// createWheat()
-
 // Define a variable in this module whose initial value is an empty array. This array will store all of the plants that are growing in the field. Do not export the array.
-const plantsArray = []
+const plantsArray = [];
 
-// In the module, define and export a function named addPlant. The addPlant function must accept a seed object as input. The function will add the seed to the field (How do you add something to an array? Do you remember the method for it?).  Be aware that when planting corn, an array of objects will be provided instead of a single object like all the other type of seeds. Investigate the Array.isArray method to check if corn got passed in, or one of the others.
-export const addPlant = (seeds) => {
-    //.push into array each seed object type here?
-    //plantsArray.push(createAsparagus)
-    for (const seed of seeds){
-        plantsArray.push(seed)
-    }
-// plantsArray.isArray(seed)
-return plantsArray
-}
+// In the module, define and export a function named addPlant.
+//  The addPlant function must accept a seed object as input.
+export const addPlant = (seedObject) => {
+    plantsArray.push(seedObject)
+    //if () {
 
-// Define and export a function named usePlants that returns a copy of the array of plants.
-// export const usePlants = () => {
-//     const = addPlant()
-   
+    
+  //The function will add the seed to the field (How do you add something to an array? Do you remember the method for it?).
+  ;
 
-// return plantsArray
-// }
+  // Be aware that when planting corn, an array of objects will be provided instead of a single object like all the other type of seeds. Investigate the Array.isArray method to check if corn got passed in, or one of the others. if else
+  //.push into array
+  //for (const seed of seeds){
+  return plantsArray;
+};
+
+// Define and export a function named usePlants
+export const usePlant = () => {
+    const newPlantsArray = addPlant()
+
+// returns a copy of the array of plants
+return newPlantsArray
+};
 
 
-// Write some temporary test code in the main module to check if your functions do their job correctly.
 
-// Create a seed object.
-// Invoke addPlant() and specify the seed object as the argument.
-//addPlant(asparagus)
-// Invoke usePlants() and store its return value in a variable.
-//const plants = usePlants()
-// Use console.log() to make sure your seed object got added to the array of plants in the field.
+
+//seedObject = {type: 'Soybean', height: 20, output: 4}
+// if seedOject is an array then iterate and push to plantsArry
+// else push object to plantsArray directly

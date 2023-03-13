@@ -13,8 +13,10 @@
 // Define and export a Catalog function.
 // The Catalog function should accept the harvested food array as input.
 export const catalog = (foodArray) => {
+    for (let food of foodArray)
+    return <section class="plant">${food.name}</section>
     //for (const  )
- //= `<section class="plant">Corn</section>`
+ //  set equal to? = `<section class="plant">Corn</section>`
 
 
 
