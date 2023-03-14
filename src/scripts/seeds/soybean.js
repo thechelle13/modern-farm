@@ -9,11 +9,9 @@ const soybean = {
     output: 4
     }
 
-
-
 export const createSoybean = () => {
-    
+       
     
     return soybean
 }
-console.log(createSoybean())
+
