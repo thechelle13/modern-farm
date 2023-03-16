@@ -1,4 +1,4 @@
-
+// import from main to make html work?
 import { createPlan } from "./plan.js";
 import { plantSeeds } from "./tractor.js";
 import { usePlant } from "./field.js";
@@ -24,11 +24,10 @@ import { harvestPlants } from "./harvester.js";
 // Define and export a Catalog function.
 // The Catalog function should accept the harvested food array as input.
 export const catalog = (harvestedFood) => {
-    let htmlString = `<main class ="container">`
-    for (let harvest of harvestedFood) {
+    let htmlString = ``
+    for (const harvest of harvestedFood) {
         //reference - beyonce exe to build html string
-        htmlString += `<section class="plant">${usePlant}</section>`
-        htmlString += `</main>`
+        htmlString += `<section class="plant">${harvest.type}</section>`
     }
     return htmlString
 }

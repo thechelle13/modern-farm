@@ -1,13 +1,11 @@
 console.log("Welcome to the main module")
 // In the main.js, invoke the Catalog function and make sure you pass the array of food as an argument. 
  
-import { catalog } from "./catalog.js"
 
-
-// invoke  usePlant function from field?
+import { usePlant } from "./field.js";
 import { createPlan } from "./plan.js";
 import { plantSeeds } from "./tractor.js";
-// import { usePlant } from "./field.js";
+
 import { harvestPlants } from "./harvester.js";
 
 //import createPlan funtion and invoke here 
@@ -27,24 +25,29 @@ console.log(plantedSeeds)
 const harvestedPlants = harvestPlants(plantedSeeds)
 console.log(harvestedPlants)
 
+const list = catalog(harvestedPlants)
+console.log(list)
+
+import { catalog } from "./catalog.js"
+const parentHTMLElement = document.querySelector(".container") // "container" in index
 
 
-import { createSoybean } from "./seeds/soybean.js";
-console.log(createSoybean())
+// import { createSoybean } from "./seeds/soybean.js";
+// console.log(createSoybean())
 
-import { createWheat } from "./seeds/wheat.js";
-console.log(createWheat())
+// import { createWheat } from "./seeds/wheat.js";
+// console.log(createWheat())
 
-import { createSunflower } from "./seeds/sunflower.js";
-console.log(createSunflower())
+// import { createSunflower } from "./seeds/sunflower.js";
+// console.log(createSunflower())
 
-import { createAsparagus } from "./seeds/asparagus.js";
-console.log(createAsparagus())
+// import { createAsparagus } from "./seeds/asparagus.js";
+// console.log(createAsparagus())
 
-import { createPotato } from "./seeds/potato.js";
-console.log(createPotato())
+// import { createPotato } from "./seeds/potato.js";
+// console.log(createPotato())
 
-import { createCorn } from "./seeds/corn.js";
-console.log(createCorn())
+// import { createCorn } from "./seeds/corn.js";
+// console.log(createCorn())
 
-
+// export info to catalog to be used in html??
