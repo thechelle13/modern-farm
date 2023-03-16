@@ -10,7 +10,7 @@ const soybean = {
     }
 
 export const createSoybean = () => {
-       
+    
     
     return soybean
 }

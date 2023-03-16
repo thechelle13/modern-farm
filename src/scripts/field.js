@@ -1,3 +1,4 @@
+
 // Define a variable in this module whose initial value is an empty array. This array will store all of the plants that are growing in the field. Do not export the array.
 const plantsArray = [];
 
@@ -11,8 +12,8 @@ const plantsArray = [];
 // else push object to plantsArray directly
 export const addPlant = (seedObject) => {
     if (Array.isArray(seedObject)) {
-        for (const plant of seedObject) {
-            plantsArray.push(seedObject)
+        for (let plant of seedObject) {
+            plantsArray.push(plant)
         }
     }
         else ( plantsArray.push(seedObject))
@@ -26,5 +27,5 @@ export const addPlant = (seedObject) => {
 export const usePlant = () => {
     
 // returns a copy of the array of plants - 
-return usePlant
+return plantsArray
 };
